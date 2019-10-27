@@ -1,18 +1,12 @@
+import sys
 from selenium import webdriver
-import time
-import selenium.webdriver.support.expected_conditions as ec
-
 from selenium.webdriver import ActionChains
-from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.remote.webelement import WebElement
-from selenium.webdriver.support.select import Select
-from selenium.webdriver.support.wait import WebDriverWait
 
 browser = webdriver.Chrome("/home/sreejith/Downloads/chrome-driver/chromedriver")
 
-username = "AM.EN.U4CSE..."
-password = "....."
+username = sys.argv[1]
+password = sys.argv[2]
 start = 61
 browser.maximize_window()
 
