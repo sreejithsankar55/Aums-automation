@@ -29,9 +29,9 @@ browser.find_element_by_xpath("//input[@name ='submit']").click()
 for i in range(11):
     start = start + 1
     #The below url is unique for each user
-    strings = 'https://aums-apps-5.amrita.edu:8443/portal/tool/b610fc22-f1be-4655-b1ab-5bfcc1d97b32/take_eval' \
+    f_url = 'https://aums-apps-5.amrita.edu:8443/portal/tool/b610fc22-f1be-4655-b1ab-5bfcc1d97b32/take_eval' \
               '?evaluationId=64&reOpening=false&evalGroupId=adhoc-group%3A222' + str(start)
-    browser.get(strings)
+    browser.get(f_url)
 
     actions = ActionChains(browser)
     for _ in range(20):
