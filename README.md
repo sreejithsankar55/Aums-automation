@@ -8,3 +8,4 @@
 -If the last 3 numbers vary very much keep the numbers in a list and iterate over it.  
 
 If any issues or improvements, feel free to keep a PR.  
+Thagarpan
