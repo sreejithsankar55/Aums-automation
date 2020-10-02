@@ -10,8 +10,7 @@ password = sys.argv[2]
 start = 61
 browser.maximize_window()
 
-browser.get('https://aums-students-am.amrita.edu:8443/cas/login?service=https%3A%2F%2Faums-students-am.amrita.edu'
-            '%3A8443%2Faums%2FJsp%2FCore_Common%2Findex.jsp')
+browser.get('AUMS_URL_OF_LOGIN_PAGE')
 a = browser.find_element_by_xpath("//input[@id ='username']")
 a.send_keys(username)
 
@@ -29,8 +28,7 @@ browser.find_element_by_xpath("//input[@name ='submit']").click()
 for i in range(11):
     start = start + 1
     #The below url is unique for each user
-    f_url = 'https://aums-apps-5.amrita.edu:8443/portal/tool/b610fc22-f1be-4655-b1ab-5bfcc1d97b32/take_eval' \
-              '?evaluationId=64&reOpening=false&evalGroupId=adhoc-group%3A222' + str(start)
+    f_url = 'AUMS_URL_TILL_LAST_NO' + str(start)
     browser.get(f_url)
 
     actions = ActionChains(browser)
